@@ -16,7 +16,7 @@ body
   height: 150px
   display: inline-block
   vertical-align: top
-  +animation (myPathX 4s linear)
+  +animation (flight 3.5s linear)
 
 
 .twitter
@@ -27,361 +27,46 @@ body
   background-position: center
   background-repeat: no-repeat
 
-.twit-div > * 
-  +animation (myPathY 4s linear)
-
-.twit-div > *  > *
-  +animation (myPathR 4s linear)
-
-+keyframes(myPathX)
-  0% 
-    +transform(translateX(149.61px))
-    +animation-timing-function(linear)
-  
-  0.29% 
-    +transform(translateX(149.09px))
-    +animation-timing-function(linear)
-  
-  1.11% 
-    +transform(translateX(147.84px))
-    +animation-timing-function(cubic-bezier(.33,.44,.67,.82))
-  
-  4.01% 
-    +transform(translateX(145.1px))
-    +animation-timing-function(linear)
-  
-  4.94% 
-    +transform(translateX(144.72px))
-    +animation-timing-function(linear)
-  
-  5.94% 
-    +transform(translateX(144.58px))
-    +animation-timing-function(cubic-bezier(.33,.07,.67,.43))
-  
-  8.09% 
-    +transform(translateX(145.27px))
-    +animation-timing-function(cubic-bezier(.33,.16,.67,.47))
-  
-  12.78% 
-    +transform(translateX(152.25px))
-    +animation-timing-function(cubic-bezier(.333,.155,.667,.429))
-  
-  22.17% 
-    +transform(translateX(202.08px))
-    +animation-timing-function(cubic-bezier(.33,.27,.67,.61))
-  
-  26.65% 
-    +transform(translateX(252.71px))
-    +animation-timing-function(cubic-bezier(.33,.32,.67,.66))
-  
-  29.06% 
-    +transform(translateX(286.15px))
-    +animation-timing-function(cubic-bezier(.33,.33,.67,.66))
-  
-  30.37% 
-    +transform(translateX(305.11px))
-    +animation-timing-function(linear)
-  
-  31.06% 
-    +transform(translateX(315.18px))
-    +animation-timing-function(linear)
-  
-  31.78% 
-    +transform(translateX(325.64px))
-    +animation-timing-function(cubic-bezier(.333,.557,.667,.945))
-  
-  45.04% 
-    +transform(translateX(446.98px))
-    +animation-timing-function(cubic-bezier(.333,0,.667,.466))
-  
-  54.86% 
-    +transform(translateX(355.64px))
-    +animation-timing-function(cubic-bezier(.333,.534,.667,1))
-  
-  64.68% 
-    +transform(translateX(264.31px))
-    +animation-timing-function(cubic-bezier(.333,.013,.667,.535))
-  
-  74.78% 
-    +transform(translateX(362px))
-    +animation-timing-function(cubic-bezier(.33,.33,.67,.66))
-  
-  77.93% 
-    +transform(translateX(407.72px))
-    +animation-timing-function(linear)
-  
-  78.41% 
-    +transform(translateX(414.71px))
-    +animation-timing-function(linear)
-  
-  78.9% 
-    +transform(translateX(421.89px))
-    +animation-timing-function(cubic-bezier(.33,.33,.67,.67))
-  
-  79.92% 
-    +transform(translateX(436.66px))
-    +animation-timing-function(cubic-bezier(.33,.34,.67,.67))
-  
-  82.03% 
-    +transform(translateX(467.06px))
-    +animation-timing-function(cubic-bezier(.333,.463,.667,.869))
-  
-  91.5% 
-    +transform(translateX(564px))
-    +animation-timing-function(linear)
-  
-  100% 
-    +transform(translateX(564px))
-
-+keyframes(myPathY)
-  0% 
-    +transform(translateY(-17.89px))
-    +transform(translateY(-17.89px) translateZ(0px))
-    +animation-timing-function(linear)
-  0.29% 
-    +transform(translateY(-13.69px))
-    +animation-timing-function(linear)
-  1.11% 
-    +transform(translateY(-1.84px))
-    +animation-timing-function(cubic-bezier(.33,.33,.67,.67))
-  4.01% 
-    +transform(translateY(40.44px))
-    +animation-timing-function(linear)
-  4.94% 
-    +transform(translateY(54.06px))
-    +animation-timing-function(linear)
-  5.94% 
-    +transform(translateY(68.63px))
-    +animation-timing-function(cubic-bezier(.33,.33,.67,.67))
-  8.09% 
-    +transform(translateY(100.06px))
-    +animation-timing-function(cubic-bezier(.33,.33,.67,.67))
-  12.78% 
-    +transform(translateY(168.19px))
-    +animation-timing-function(cubic-bezier(.333,.355,.667,.713))
-  22.17% 
-    +transform(translateY(294.53px))
-    +animation-timing-function(cubic-bezier(.33,.42,.67,.77))
-  26.65% 
-    +transform(translateY(335.02px))
-    +animation-timing-function(cubic-bezier(.33,.45,.67,.79))
-  29.06% 
-    +transform(translateY(345.72px))
-    +animation-timing-function(cubic-bezier(.33,.45,.67,.77))
-  30.37% 
-    +transform(translateY(348.2px))
-    +animation-timing-function(linear)
-  31.06% 
-    +transform(translateY(348.67px))
-    +animation-timing-function(linear)
-  31.78% 
-    +transform(translateY(348.59px))
-    +animation-timing-function(cubic-bezier(.333,.012,.667,.523))
-  45.04% 
-    +transform(translateY(218.42px))
-    +animation-timing-function(cubic-bezier(.333,.534,.667,1))
-  54.86% 
-    +transform(translateY(127.08px))
-    +animation-timing-function(cubic-bezier(.333,0,.667,.466))
-  64.68% 
-    +transform(translateY(218.42px))
-    +animation-timing-function(cubic-bezier(.333,.541,.667,.877))
-  74.78% 
-    +transform(translateY(315px))
-    +animation-timing-function(cubic-bezier(.33,.66,.67,.94))
-  77.93% 
-    +transform(translateY(320.33px))
-    +animation-timing-function(linear)
-  78.41% 
-    +transform(translateY(320.35px))
-    +animation-timing-function(linear)
-  78.9% 
-    +transform(translateY(320.16px))
-    +animation-timing-function(cubic-bezier(.33,.22,.67,.56))
-  79.92% 
-    +transform(translateY(319.07px))
-    +animation-timing-function(cubic-bezier(.33,.21,.67,.53))
-  82.03% 
-    +transform(translateY(313.53px))
-    +animation-timing-function(cubic-bezier(.333,.118,.667,.499))
-  91.5% 
-    +transform(translateY(223.88px))
-    +animation-timing-function(linear)
-  100% 
-    +transform(translateY(348.09px))
-
-+keyframes(myPathR)
-  0% 
-    +transform(rotate(97.12deg))
-    +transform(rotate(97.12deg) translateZ(0px))
-    +animation-timing-function(linear)
-  
-  0.29% 
-    +transform(rotate(97.12deg))
-
-  0.2901% 
-    +transform(rotate(96.02deg))
-    +animation-timing-function(linear)
-  
-  1.11% 
-    +transform(rotate(96.02deg))
-
-  1.1101% 
-    +transform(rotate(94.63deg))
-    +animation-timing-function(cubic-bezier(.33,0,.67,.87))
-  
-  4.01% 
-    +transform(rotate(92.57deg))
-
-  4.0101% 
-    +transform(rotate(91.6deg))
-    +animation-timing-function(linear)
-
-  4.94% 
-    +transform(rotate(91.6deg))
-
-  4.9401% 
-    +transform(rotate(90.54deg))
-    +animation-timing-function(linear)
-
-  5.94% 
-    +transform(rotate(90.54deg))
-
-  5.9401% 
-    +transform(rotate(89.38deg))
-    +animation-timing-function(cubic-bezier(.33,0,.67,1))
-
-  8.09% 
-    +transform(rotate(88.11deg))
-
-    8.0901% 
-    +transform(rotate(86.71deg))
-    +animation-timing-function(cubic-bezier(.33,.29,.67,.48))
-  
-  12.78% 
-    +transform(rotate(80.99deg))
-
-    12.7801% 
-    +transform(rotate(79.92deg))
-    +animation-timing-function(cubic-bezier(.333,.205,.667,.493))
-  
-  22.17% 
-    +transform(rotate(52.75deg))
-
-  22.1701% 
-    +transform(rotate(49.93deg))
-    +animation-timing-function(cubic-bezier(.33,.08,.67,.86))
-  
-  26.65% 
-    +transform(rotate(26.79deg))
-
-  26.6501% 
-    +transform(rotate(23.2deg))
-    +animation-timing-function(cubic-bezier(.33,.34,.67,.67))
-  
-  29.06% 
-    +transform(rotate(12.56deg))
-
-  
-  29.0601% 
-    +transform(rotate(9.14deg))
-    +animation-timing-function(cubic-bezier(.33,0,.67,1))
-  
-  30.37% 
-    +transform(rotate(5.83deg))
-
-  
-  30.3701% 
-    +transform(rotate(2.63deg))
-    +animation-timing-function(linear)
-  
-  31.06% 
-    +transform(rotate(2.63deg))
-
-  
-  31.0601% 
-    +transform(rotate(-0.43deg))
-    +animation-timing-function(linear)
-  
-  31.78% 
-    +transform(rotate(-0.43deg))
-
-  
-  31.7801% 
-    +transform(rotate(-2.1deg))
-    +animation-timing-function(cubic-bezier(.333,.5,.667,.599))
-  
-  45.04% 
-    +transform(rotate(-88.09deg))
-
-  
-  45.0401% 
-    +transform(rotate(-91.45deg))
-    +animation-timing-function(cubic-bezier(.333,.303,.667,.697))
-  
-  54.86% 
-    +transform(rotate(-178.55deg))
-
-  54.8601% 
-    +transform(rotate(178.55deg))
-    +animation-timing-function(cubic-bezier(.333,.303,.667,.697))
-  
-  64.68% 
-    +transform(rotate(91.45deg))
-
-  64.6801% 
-    +transform(rotate(88.13deg))
-    +animation-timing-function(cubic-bezier(.333,.551,.667,.802))
-  
-  74.78% 
-    +transform(rotate(15.21deg))
-
-  74.7801% 
-    +transform(rotate(11.72deg))
-    +animation-timing-function(cubic-bezier(.33,.47,.67,.66))
-  
-  77.93% 
-    +transform(rotate(1.74deg))
-
-  77.9301% 
-    +transform(rotate(.13deg))
-    +animation-timing-function(linear)
-  
-  78.41% 
-    +transform(rotate(.13deg))
-
-  78.4101% 
-    +transform(rotate(-1.54deg))
-    +animation-timing-function(linear)
-  
-  78.9% 
-    +transform(rotate(-1.54deg))
-
-  78.9001% 
-    +transform(rotate(-3.29deg))
-    +animation-timing-function(cubic-bezier(.33,0,.67,1))
-  
-  79.92% 
-    +transform(rotate(-5.13deg))
-
-  79.9201% 
-    +transform(rotate(-7.08deg))
-    +animation-timing-function(cubic-bezier(.33,.3,.67,.63))
-  
-  82.03% 
-    +transform(rotate(-13.65deg))
-
-  82.0301% 
-    +transform(rotate(-16.13deg))
-    +animation-timing-function(cubic-bezier(.333,.139,.667,.775))
-  
-  91.5% 
-    +transform(rotate(-71.34deg))
-
-  91.5001% 
-    +transform(rotate(90deg))
-    +animation-timing-function(linear)
-  
-  100% 
-    +transform(rotate(90deg))
-
++keyframes(flight)
+  0%
+    +transform(translateY(-400%) translateX(-200%) rotate(113deg))
+    +animation-timing-function (linear)
+  10%
+    +transform(translateY(-250%) translateX(-185%) rotate(113deg))
+    +animation-timing-function (linear)
+  15%
+    +transform(translateY(-100%) translateX(-160%) rotate(90deg))
+    +animation-timing-function (linear)
+  20%
+    +transform(translateY(-100%) translateX(-100%) rotate(0deg))
+    +animation-timing-function (linear)
+  22.5%
+    +transform(translateY(-125%) translateX(-75%) rotate(-35deg))
+    +animation-timing-function (linear)
+  25%
+    +transform(translateY(-150%) translateX(-50%) rotate(-70deg))
+    +animation-timing-function (linear)
+  27.5%
+    +transform(translateY(-200%) translateX(-85%) rotate(-70deg))
+    +animation-timing-function (linear)
+  30%
+    +transform(translateY(-225%) translateX(-100%) rotate(-140deg))
+    +animation-timing-function (linear)
+  32.5%
+    +transform(translateY(-215%) translateX(-125%) rotate(-140deg))
+    +animation-timing-function (linear)
+  35%
+    +transform(translateY(-200%) translateX(-145%) rotate(-170deg))
+    +animation-timing-function (linear)
+  40%
+    +transform(translateY(-150%) translateX(-150%) rotate(-223deg))
+    +animation-timing-function (linear)
+  45%
+    +transform(translateY(-100%) translateX(-100%) rotate(-327deg))
+    +animation-timing-function (linear)
+  55%
+    +transform(translateY(-150%) translateX(0%) rotate(-360deg))
+    +animation-timing-function (ease-in)
+  100%
+    +transform(translateY(0%) translateX(0%) rotate(-360deg))
+    +animation-timing-function (ease-out)
